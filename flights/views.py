@@ -5,6 +5,7 @@ from .permissions import LoggedInUser, FutureBooking
 from .models import Flight, Booking
 from .serializers import FlightSerializer, BookingSerializer, BookingDetailsSerializer, UpdateBookingSerializer, RegisterSerializer, AdminUpdateBookingSerializer
 
+# 
 
 class FlightsList(ListAPIView):
 	queryset = Flight.objects.all()
